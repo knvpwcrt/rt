@@ -414,5 +414,5 @@ function Invoke-NiceEgret
 	$BindingFlags = [Reflection.BindingFlags] "Public,Static"
 	$a = @()
 	$Assembly.GetType("Costura.AssemblyLoader", $false).GetMethod("Attach", $BindingFlags).Invoke($Null, @())
-	$Assembly.GetType("CuteEgret.Program").GetMethod("InvokeCuteEgret").Invoke($Null, @(,$passed))
+	$Assembly.GetType("Cuteegret.Program").GetMethod("InvokeCuteEgret").Invoke($Null, @(,$passed))
 }
